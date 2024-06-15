@@ -113,6 +113,10 @@ html{
     position: relative;
 }
 
+#password-p{
+    padding: 0px 55px 0px 3px;
+}
+
 #olho{
     right: 5%;
     cursor: pointer;
