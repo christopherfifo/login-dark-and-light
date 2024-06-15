@@ -30,3 +30,19 @@ function mostrarSenha(){
   modeSenha.classList.replace('fa-eye-slash','fa-eye')
 
 }
+
+function guardarInform (){
+  var nome = document.getElementById('name').value;
+  var emaill = document.getElementById('email').value;
+  var senha = document.getElementById('password-p').value;
+
+localStorage.setItem("name", nome)
+localStorage.setItem("email", emaill)
+localStorage.setItem("pass", senha)
+
+//TODO para pegar o valor
+
+// localStorage.getItem("name")
+// localStorage.getItem("email")
+// localStorage.getItem("pass")
+}
