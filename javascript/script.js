@@ -17,7 +17,11 @@ mode.addEventListener("click", () => {
   form.classList.remove("dark");
 });
 
-function mostrarSenha(){
+//| função para mostrar a senha
+
+const mostrarSenha = document.getElementById("olho");
+
+mostrarSenha.addEventListener("click", () =>{
   var inputPass = document.getElementById('password-p') //| pega o id do input
   var modeSenha = document.getElementById('olho')//| pega o id do mode (figura)
 
@@ -29,9 +33,11 @@ function mostrarSenha(){
   inputPass.setAttribute('type','password')
   modeSenha.classList.replace('fa-eye-slash','fa-eye')
 
-}
+})
 
-function guardarInform (){
+const guardarInform = document.getElementById("login_form" );
+
+guardarInform.addEventListener("click", () => {
   var nome = document.getElementById('name').value;
   var emaill = document.getElementById('email').value;
   var senha = document.getElementById('password-p').value;
@@ -45,4 +51,4 @@ localStorage.setItem("pass", senha)
 // localStorage.getItem("name")
 // localStorage.getItem("email")
 // localStorage.getItem("pass")
-}
+})
